@@ -1,9 +1,9 @@
 import requests
 
-url = 'http://146.56.106.142/uploadfile/'
-filename = 'Cyberpunk.png'
+url = 'http://{server ip}/uploadfile/'
+filedirectory = '{file directory}'
 
-with open(filename, 'rb') as f:
+with open(filedirectory, 'rb') as f:
 	res = requests.post(url, files = {'file': f})
 	if res.status_code == 200:
 		print(res.status_code, "Image Upload Success")
