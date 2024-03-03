@@ -21,7 +21,8 @@ $ pip install -r requirements.txt
 
 ```bash
 # Let's Start!
-$ python3 server.py
+$ cd app
+$ uvicorn server:app --reload
 ```
 
 ## Contributers
